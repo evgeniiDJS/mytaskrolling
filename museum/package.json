@@ -1,0 +1,17 @@
+{
+  "name": "museum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
