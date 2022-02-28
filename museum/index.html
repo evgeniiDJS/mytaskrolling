@@ -41,7 +41,7 @@
     </header>
     <main class="main">
       <section class="welcome" id="welcome">
-        <div class="container">
+        <div class="container container_flex">
           <div class="welcome-content">
             <h2 class="welcome-content__title">
               Welcome 
@@ -49,7 +49,40 @@
               to the Louvre 
             </h2>
             <p class="welcome-content__text">From the castle to the museum</p>
-            <a href="./Discover.html" target="_blank" class="welcome-content__btn">Discover the Louvre</a>
+            <a class="welcome-content__btn" href="./Discover.html" target="_blank" >Discover the Louvre</a>
+          </div>
+          <div class="welcome-slider">
+            <div class="flex-wrapper">
+              <div class="slider-wrapper">
+                  <div class="slide active">
+                    <img src="./src/assets/img/welcome-slider/1.jpg" alt="slider">
+                  </div>
+                  <div class="slide">
+                    <img src="./src/assets/img/welcome-slider/2.jpg" alt="slider">
+                  </div>
+                  <div class="slide">
+                    <img src="./src/assets/img/welcome-slider/3.jpg" alt="slider">
+                  </div>
+                  <div class="slide">
+                    <img src="./src/assets/img/welcome-slider/4.jpg" alt="slider">
+                  </div>
+                  <div class="slide">
+                    <img src="./src/assets/img/welcome-slider/5.jpg" alt="slider">
+                  </div>
+              </div>
+            </div>
+            <div class="dots-wrapper">
+              <span class="dots-wrapper_count">01 <span>| 05</span></span>
+              <span class="dots-wrapper__items dot active"></span>
+              <span class="dots-wrapper__items dot"></span>
+              <span class="dots-wrapper__items dot"></span>
+              <span class="dots-wrapper__items dot"></span>
+              <span class="dots-wrapper__items dot"></span>
+              <div class="dots-wrapper__buttons">
+                <button id="btn-prev">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <button id="btn-next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -159,9 +192,9 @@
           </div>
           <div class="picture-container">
             <div class="picture-inner-container">
-              <img src="./src/assets/img/galery/galery6.jpg" alt="icons">
+             <!--  <img src="./src/assets/img/galery/galery6.jpg" alt="icons">
               <img src="./src/assets/img/galery/galery5.jpg" alt="icons">
-              <img src="./src/assets/img/galery/galery12.jpg" alt="icons">
+              <img src="./src/assets/img/galery/galery12.jpg" alt="icons"> -->
             </div>
           </div>
         </div>
@@ -223,6 +256,7 @@
           </div>
         </div>
       </section>
+      <section class="parallax" id="parallax"></section>
       <section class="section contacts" id="contacts">
         <div class="container">
           <h2 class="title title-gold title-underline">Contacts</h2>
@@ -300,6 +334,7 @@
         <p style="cursor: default;">evgeniiDJS</p>
       </div>
     </footer>
+    <script src="./src/js/gallery.js"></script>
     <script src="./dist/main.js"></script>
 </body>
 </html>

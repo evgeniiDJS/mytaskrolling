@@ -109,6 +109,8 @@ body {
 }
 
 .welcome-content__btn {
+  position: relative;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,23 +197,110 @@ body {
   background-image: url("../../assets/svg/btn-fullScreen.svg");
 }
 
+.container_flex {
+  display: flex;
+}
+
+.welcome-slider {
+  flex-basis: 50%;
+  position: absolute;
+  display: block;
+  left: 250px;
+  z-index: 1;
+}
+
+.flex-wrapper {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  max-width: 1080px;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+}
+
+#btn-prev,
+#btn-next {
+  cursor: pointer;
+}
+
+#btn-prev {
+  background-image: url("../../assets/svg/prev.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 8px;
+  margin-right: 15px;
+}
+
+#btn-next {
+  background-image: url("../../assets/svg/next.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 8px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 150px 0 0;
+}
+
+.dot.active {
+  background-color: #D2B183;
+}
+
+.dots-wrapper__items {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.dots-wrapper_count {
+  margin-right: 20px;
+}
+
+.dots-wrapper__buttons {
+  padding-left: 30px;
+}
+
 .main {
   display: block;
 }
 
 .welcome {
-  background: url(../../assets/img/welcome-bg.jpg) no-repeat;
-  background-position: calc(50% + 352px) calc(100%);
+  position: relative;
   background-color: #030303;
   color: #fff;
 }
 
 .welcome .welcome-content {
+  flex-basis: 50%;
   padding-top: 125px;
   padding-bottom: 246px;
 }
 
 .welcome .welcome-content .welcome-content__title {
+  position: relative;
+  z-index: 3;
   font-family: "Forum", cursive;
   font-size: 80px;
   font-weight: 400;
@@ -220,9 +309,11 @@ body {
 }
 
 .welcome .welcome-content .welcome-content__text {
+  position: relative;
   font-size: 28px;
   letter-spacing: 2px;
   padding: 26px 0 76px;
+  z-index: 3;
 }
 
 .section {
@@ -559,6 +650,14 @@ body {
   font-size: 28px;
   letter-spacing: 1.65px;
   margin: 50px 0 52px 0;
+}
+
+.parallax {
+  background-image: url("../../assets/img/parallax.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content {
