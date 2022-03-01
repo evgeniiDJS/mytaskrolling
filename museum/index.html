@@ -156,11 +156,38 @@
       </section>
       <section class="section video" id="video">
         <div class="container video-container">
-          <div class="video-player">
-            <img src="./src/assets/video/poster0.jpg" alt="video" class="video-player__img">
-            <button class="btn video-player__middle_play"></button>
+          <div class="video-info">
+            <h2 class="title title-gold">Video journey</h2>
+            <p class="video-info__text">Enter asnd visit one of the most famous museums in the world and enjoy <br> masterpieces such as Mona Lisa or Hammurabi's Code</p>
           </div>
-          <div class="control-panel">
+          <div class="video-player">
+            <iframe
+              width="1300"
+              height="860"
+              src="https://www.youtube.com/embed/zp1BXPX8jcU"
+              srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+              html,body{height:100%}
+              img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+              span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+              </style>
+              <a href=https://www.youtube.com/embed/zp1BXPX8jcU>
+              <img src=./src/assets/video/poster0.jpg alt='Demo video'>
+              <span>▶</span>
+              </a>"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              title="Welcome Louvre">
+            </iframe>
+            <div class="video-player__items">
+              <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- <img src="./src/assets/video/poster0.jpg" alt="video" class="video-player__img">
+            <button class="btn video-player__middle_play"></button> -->
+          </div>
+         <!--  <div class="control-panel">
             <button class="btn video-player__btn_back"></button>
             <button class="btn video-player__btn_play"></button>
             <button class="btn video-player__btn_forward"></button>
@@ -170,10 +197,7 @@
               <input class="input input_volume" type="range" value="43" min="0" max="100">
             </div>
             <button class="btn video-player__btn_fullScreen"></button>
-          </div>
-          <div class="video-info">
-            <h2 class="title title-gold">Video journey</h2>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="section gallery" id="gallery">

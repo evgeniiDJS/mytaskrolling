@@ -152,6 +152,14 @@
     padding-top: 12px;
     .video-player {
         position: relative;
+        .video-player__items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            iframe {
+               padding: 5px;
+            }
+        }
     }
     .control-panel {
         display: flex;
@@ -179,8 +187,15 @@
     .video-info {
         display: flex;
         margin-top: 40px;
+        padding: 0 0 30px 0 ;
         .title-gold {
             color: #9d8665;
+        }
+        .video-info__text {
+            flex: 20%;
+            padding-left: 40px;
+            font-size: 20px;
+            line-height: 39px;
         }
     }
 }
@@ -201,7 +216,7 @@
     }
     .picture-container {
         overflow-y: hidden;
-        height: 200px; 
+        height: 300px;
     }
     .picture-inner-container {
         column-count: 3;
