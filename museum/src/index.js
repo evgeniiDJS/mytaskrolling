@@ -1,5 +1,4 @@
-import avg from './js/some.js';
 import slider from './js/slider.js'; slider;
+import disablingScrolling from './js/disablingScrolling.js'; disablingScrolling;
 
 
-console.log(avg(1, 2, 4))
