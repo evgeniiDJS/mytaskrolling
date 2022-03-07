@@ -305,7 +305,7 @@ img {
 .modalDialog > div {
   width: 1300px;
   position: relative;
-  margin: 10% auto;
+  margin: 2% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: #fff;
@@ -378,6 +378,7 @@ img {
 
 .price .price__output {
   display: flex;
+  margin-bottom: 22px;
 }
 
 .price .price__output .output__cols1 {
@@ -389,10 +390,11 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 37px;
+  line-height: 38px;
 }
 
 .price .price__output .output__cols1 .price__text {
+  padding: 2px 0 10px 0;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -402,8 +404,35 @@ img {
   opacity: 0.9;
 }
 
-.price .price__output .output__cols2 {
-  flex: 50%;
+.price .price__output .output__cols1 .price__title_font {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.price .price__output .output__cols1 .price__date {
+  padding-left: 25px;
+  background-image: url("../../assets/svg/tickets/date.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.price .price__output .output__cols1 .price__time {
+  margin: 5px 0 5px 0;
+  padding-left: 25px;
+  background-image: url("../../assets/svg/tickets/time.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.price .price__output .output__cols1 .price__about {
+  padding-left: 25px;
+  background-image: url("../../assets/svg/tickets/check_circle_outline.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
 }
 
 .price .price__output .output__cols2 .output-foto {
@@ -417,6 +446,165 @@ img {
   background-size: 150px 120px;
   background-repeat: no-repeat;
   transition: all 0.2s;
+}
+
+.price .price__calculation {
+  position: relative;
+}
+
+.price .price__calculation .price__info {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #030303;
+}
+
+.price .price__calculation .price__info .price__cols1,
+.price .price__calculation .price__info .price__cols2 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price .price__calculation .price__info .price__cols1 .price_icons,
+.price .price__calculation .price__info .price__cols2 .price_icons {
+  padding-left: 45px;
+  background-image: url("../../assets/svg/tickets/price_info.svg");
+  background-size: 32px 20px;
+  background-repeat: no-repeat;
+}
+
+.price .price__calculation .price__result {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #030303;
+}
+
+.price .price__calculation .price__result::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  height: 2px;
+  width: 100%;
+  background-color: #740C11;
+}
+
+.price .price__cards {
+  margin-top: 10px;
+  position: relative;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.price .price__cards .price__content {
+  position: relative;
+  z-index: 3;
+  padding: 15px 20px 15px 20px;
+  display: block;
+  width: 360px;
+  height: 211px;
+  background-color: #BCBCBC;
+}
+
+.price .price__cards .price__content .price__input {
+  display: flex;
+}
+
+.price .price__cards .price__content .price__input .price-cols1 .price-input__text {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+  width: 215px;
+  height: 35px;
+}
+
+.price .price__cards .price__content .price__input .price-cols1 .price-input__number {
+  padding: 10px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-right: 15px;
+  width: 100px;
+  height: 35px;
+  background-color: #ffffff;
+}
+
+.price .price__cards .price__content .price__input .price-cols1 .price-input__number::-webkit-inner-spin-button, .price .price__cards .price__content .price__input .price-cols1 .price-input__number::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.price .price__cards .price__content .price__input .price-cols2 {
+  padding: 15px 0 0 50px;
+}
+
+.price .price__cards .price__content .price__input .price-cols2 .price__visa {
+  height: 16px;
+  background-image: url("../../assets/svg/tickets/visa.svg");
+  background-size: 55px 16px;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.price .price__cards .price__content .price__input .price-cols2 .price__master {
+  height: 32px;
+  padding-left: 100px;
+  background-image: url("../../assets/svg/tickets/mastercard.svg");
+  background-size: 53px 32px;
+  background-repeat: no-repeat;
+}
+
+.price .price__cards .price__content .price__hold .price__card-holder {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  outline: none;
+  border-radius: 0.25rem;
+  width: 320px;
+  height: 35px;
+}
+
+.price__content_card-two {
+  position: absolute;
+  top: 30px;
+  left: 215px;
+  height: 211px;
+  padding-left: 360px;
+  background-image: url("../../assets/svg/tickets/cardTwo.svg");
+  background-size: 360px 211px;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.price__cvv {
+  position: absolute;
+  top: 135px;
+  left: 480px;
+  width: 75px;
+  height: 35px;
+  background-color: #ffffff;
+  z-index: 3;
+  padding: 10px;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  outline: none;
+  border-radius: 0.25rem;
 }
 
 .main {

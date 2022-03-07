@@ -227,6 +227,7 @@
         
 
         <div id="openModal" class="modalDialog">
+         <!--  Tickets modal clicks -->
           <div>
             <a href="#close" title="Закрыть" class="close">X</a>
             <div class="modaldialog-content">
@@ -240,13 +241,55 @@
                   <div class="output__cols1">
                     <h3 class="price__title">Overview</h3>
                     <p class="price__text">Tour to Louvre</p>
-                    <p class="price__date">Friday, August 19</p>
-                    <p class="price__time">16 : 30</p>
-                    <p class="price__about">Temporary exhibition</p>
+                    <p class="price__date price__title_font">Friday, August 19</p>
+                    <p class="price__time price__title_font">16 : 30</p>
+                    <p class="price__about price__title_font">Temporary exhibition</p>
                   </div>
                   <div class="output__cols2">
                     <a class="output-foto" href="#tickets"></a>
                   </div>
+                </div>
+                <div class="price__calculation">
+                    <div class="price__info">
+                      <div class="price__cols1">
+                        <p class="price_icons">Basic (20 €)</p>
+                        <p>40 €</p>
+                      </div>
+                      <div class="price__cols2">
+                        <p class="price_icons">Senior (10 €)</p>
+                        <p>20 €</p>
+                      </div>
+                      <div class="price__result">
+                        <p>Total:</p>
+                        <p>60 €</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="price__cards">
+                  <div class="price__content">
+
+                    <div class="price__input">
+                      <div class="price-cols1">
+                        <label for="card-number">Card number</label>
+                        <input class="price-input__text" type="text" maxlength="16" required>
+                        <p>Expiration date</p>
+                        <div style="display: flex; padding-bottom:28px ;">
+                          <input class="price-input__number" type="number" step="1" min="1" max="12" value="03">
+                          <input class="price-input__number" type="number" step="1" min="1900" max="2100" value="2024">
+                        </div>
+                      </div>
+                      <div class="price-cols2">
+                        <div class="price__visa">&nbsp;&nbsp;&nbsp;</div>
+                        <div class="price__master">&nbsp;&nbsp;&nbsp;</div>
+                      </div>
+                    </div> 
+                    <div class="price__hold">
+                      <label for="carrd-holder">Cardholder name</label>
+                      <input class="price__card-holder" type="text">
+                    </div>
+                  </div>
+                  <input class="price__cvv" type="password" pattern="[0-9]*"  minlength="3" maxlength="3" size="3" inputmode="numeric" required>
+                  <div class="price__content_card-two">&nbsp;&nbsp;&nbsp;</div>
                 </div>
               </aside>
             </div>
