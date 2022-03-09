@@ -232,9 +232,30 @@
             <a href="#close" title="Закрыть" class="close">X</a>
             <div class="modaldialog-content">
               <article class="data">
-                <a class="modaldialog-content__logo" href="#tickets"></a>
-                <h2 class="title title-gold title-underline modaldialog-content__title">Booking tickets</h2>
-                <p class="modaldialog-content__text">Tour to Louvre</p>
+                <div class="data__title">
+                  <a class="modaldialog-content__logo" href="#tickets"></a>
+                  <h2 class="title title-gold title-underline modaldialog-content__title">Booking tickets</h2>
+                  <p class="modaldialog-content__text">Tour to Louvre</p>
+                </div>
+                <div class="data__output">
+                  <div class="date-time">
+                    <span class="date-time-icons_datesss">&nbsp;&nbsp;&nbsp;</span>
+                    <input id="date" class="date-time_input" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Date">
+                    <span class="date-time-icons_timesss">&nbsp;&nbsp;&nbsp;</span>
+                    <input id="time" class="date-time_input" name="time" type="text" onfocus="(this.type='time')" onblur="if(!this.value)this.type='text'" placeholder="Time">
+                  </div>
+                  <div class="data-phone-email">
+                    <input id="name" class="date__input date-icons_name" type="text" placeholder="Name">
+                    <input id="email" class="date__input date-icons_email" type="email" placeholder="E-mail">
+                    <input id="phone" class="date__input date-icons_phone" type="phone" placeholder="Phone">
+                    <select id="ticket-type" class="date__input date-icons_ticket-type">
+                      <option value="1">Ticket Type</option>
+                      <option value="2">Ticket Type</option>
+                      <option value="3">Ticket Type</option>
+                    </select>
+                    <span class="date_ticket-type">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  </div>
+                </div>
               </article>
               <aside class="price">
                 <div class="price__output">

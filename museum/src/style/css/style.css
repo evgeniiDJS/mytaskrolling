@@ -349,7 +349,6 @@ img {
   background-image: url("../../assets/svg/tickets/logo_tickets.svg");
   background-size: 85px 41px;
   background-repeat: no-repeat;
-  transition: all 0.2s;
 }
 
 .data .modaldialog-content__title {
@@ -360,6 +359,7 @@ img {
   line-height: 55px;
   text-transform: uppercase;
   margin: 20px 0 0 0;
+  padding-bottom: 20px;
 }
 
 .data .modaldialog-content__text {
@@ -369,6 +369,110 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #710707;
+}
+
+.data .data__output {
+  margin: 100px 0 0 0;
+}
+
+.data .data__output .date-time {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.data .data__output .date-time .date-time_input {
+  padding: 10px 10px 10px 35px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-right: 15px;
+  width: 190px;
+  height: 45px;
+  background: #fff url("../../assets/svg/tickets/arrow.svg") 160px 13px no-repeat;
+  background-size: 17px 17px;
+}
+
+.data .data__output .date-time .date-time_input::-webkit-calendar-picker-indicator {
+  background: none;
+}
+
+.data .data__output .date-time .date-time-icons_datesss {
+  top: 15px;
+  left: 120px;
+  position: absolute;
+  padding-left: 100px;
+  background-image: url("../../assets/svg/tickets/datess.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.data .data__output .date-time .date-time-icons_timesss {
+  top: 15px;
+  left: 325px;
+  position: absolute;
+  padding-left: 100px;
+  background-image: url("../../assets/svg/tickets/timesss.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.data .data__output .data-phone-email {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.data .data__output .data-phone-email .date__input {
+  background-size: 13px 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  padding: 10px 0 10px 43px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-right: 15px;
+  margin-top: 20px;
+  width: 400px;
+  height: 45px;
+}
+
+.data .data__output .data-phone-email .date-icons_name {
+  background: #fff url("../../assets/svg/tickets/output-Name.svg") 15px 15px no-repeat;
+}
+
+.data .data__output .data-phone-email .date-icons_email {
+  background: #fff url("../../assets/svg/tickets/tickets_Email.svg") 15px 15px no-repeat;
+}
+
+.data .data__output .data-phone-email .date-icons_phone {
+  background: #fff url("../../assets/svg/tickets/tickets_Tel.svg") 15px 15px no-repeat;
+}
+
+.data .data__output .data-phone-email .date-icons_ticket-type {
+  background: #fff url("../../assets/svg/tickets/ticketsTypeTickets.svg") 15px 15px no-repeat;
+}
+
+.data .data__output .data-phone-email select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.data .data__output .data-phone-email .date_ticket-type {
+  position: absolute;
+  top: 230px;
+  left: 490px;
+  background-image: url("../../assets/svg/tickets/arrow.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
 }
 
 .price {
