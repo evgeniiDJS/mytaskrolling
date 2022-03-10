@@ -161,7 +161,7 @@
             <p class="video-info__text">Enter asnd visit one of the most famous museums in the world and enjoy <br> masterpieces such as Mona Lisa or Hammurabi's Code</p>
           </div>
           <div class="video-player">
-            <iframe class="video-player__first"
+            <iframe class="video-player__first" style="border: 0;"
               width="1300"
               height="860"
               src="https://www.youtube.com/embed/zp1BXPX8jcU"
@@ -179,9 +179,9 @@
               title="Welcome Louvre">
             </iframe>
             <div class="video-player__items">
-              <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!-- <img src="./src/assets/video/poster0.jpg" alt="video" class="video-player__img">
             <button class="btn video-player__middle_play"></button> -->
@@ -253,6 +253,25 @@
                     <span class="date_ticket-type">&nbsp;&nbsp;&nbsp;&nbsp;</span>
                   </div>
                 </div>
+                <div class="data__entry-ticets">
+                  <input class="data-entry__input" type="text" maxlength="20" placeholder="Entry ticket">
+                  <div class="entry__cols1">
+                    <p>Basic 18+ (20 €)</p>
+                    <div>
+                      <button class="data-entry_btn" onclick="this.nextElementSibling.stepDown()">−</button>
+                      <input class="data-entry_num_input" type="number" min="0" max="20" value="1" readonly="">
+                      <button class="data-entry_btn" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                  </div>
+                  <div class="entry__cols2">
+                    <p>Senior 65+ (10 €)</p>
+                    <div>
+                      <button class="data-entry_btn" onclick="this.nextElementSibling.stepDown()">−</button>
+                      <input class="data-entry_num_input" type="number" min="0" max="20" value="1" readonly="">
+                      <button class="data-entry_btn" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                  </div>
+                </div>
               </article>
               <aside class="price">
                 <div class="price__output">
@@ -285,7 +304,6 @@
                 </div>
                 <div class="price__cards">
                   <div class="price__content">
-
                     <div class="price__input">
                       <div class="price-cols1">
                         <label>Card number</label>
@@ -308,6 +326,7 @@
                   </div>
                   <input class="price__cvv" type="password"  minlength="3" maxlength="3" size="3" title="Enter a three digit CVV">
                   <div class="price__content_card-two">&nbsp;&nbsp;&nbsp;</div>
+                  <button class="price__cards_btn">Book</button>
                 </div>
               </aside>
             </div>

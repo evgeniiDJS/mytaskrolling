@@ -358,8 +358,6 @@ img {
   font-size: 50px;
   line-height: 55px;
   text-transform: uppercase;
-  margin: 20px 0 0 0;
-  padding-bottom: 20px;
 }
 
 .data .modaldialog-content__text {
@@ -372,7 +370,7 @@ img {
 }
 
 .data .data__output {
-  margin: 100px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
 .data .data__output .date-time {
@@ -475,9 +473,62 @@ img {
   background-repeat: no-repeat;
 }
 
+.data .data__entry-ticets {
+  margin-top: 18px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.data .data__entry-ticets .data-entry__input {
+  display: block;
+  margin: 0 auto;
+  width: 470px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #740C11;
+  outline: none;
+}
+
+.data .data__entry-ticets .entry__cols1 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.data .data__entry-ticets .entry__cols2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data .data-entry_btn {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 22px;
+  background-color: #030303;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.data .data-entry_num_input {
+  all: unset;
+  vertical-align: middle;
+  font-size: 22px;
+  text-align: center;
+  background-color: inherit;
+  color: #030303;
+  border: none;
+}
+
 .price {
   flex: 50%;
-  padding: 25px 30px 26px 30px;
+  padding: 5px 30px 26px 30px;
 }
 
 .price .price__output {
@@ -567,7 +618,6 @@ img {
 
 .price .price__calculation .price__info .price__cols1,
 .price .price__calculation .price__info .price__cols2 {
-  padding-top: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -603,7 +653,7 @@ img {
 }
 
 .price .price__cards {
-  margin-top: 10px;
+  height: 300px;
   position: relative;
   font-family: 'Roboto';
   font-style: normal;
@@ -682,6 +732,21 @@ img {
   border-radius: 0.25rem;
   width: 320px;
   height: 35px;
+}
+
+.price .price__cards .price__cards_btn {
+  margin-top: 38px;
+  float: right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  display: block;
+  width: 220px;
+  height: 45px;
+  background-color: #710707;
+  color: #ffffff;
 }
 
 .price__content_card-two {
@@ -947,11 +1012,10 @@ img {
 
 .gallery .picture-container {
   overflow-y: hidden;
-  height: 300px;
+  height: 200px;
 }
 
 .gallery .picture-inner-container {
-  column-count: 3;
   gap: 45px 45px;
   height: 550px;
 }

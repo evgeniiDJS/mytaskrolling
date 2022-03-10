@@ -80,8 +80,6 @@
         font-size: 50px;
         line-height: 55px;
         text-transform: uppercase;
-        margin: 20px 0 0 0;
-        padding-bottom: 20px;
     }
     
     .modaldialog-content__text {
@@ -96,7 +94,7 @@
 
     .data__output {
         
-        margin: 100px 0 0 0;
+        margin: 25px 0 0 0;
         .date-time {
             position: relative;
             display: flex;
@@ -186,6 +184,53 @@
         }
         
     }
+    .data__entry-ticets {
+        margin-top: 18px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #030303;
+        .data-entry__input {
+            display: block;
+            margin: 0 auto;
+            width: 470px;
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid #740C11;
+            outline: none;
+        }
+        .entry__cols1 {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 16px;
+            padding-top: 16px;
+        }
+        .entry__cols2 {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .data-entry_btn {
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 22px;
+        background-color: #030303;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .data-entry_num_input {
+        all: unset;
+        vertical-align: middle;
+        font-size: 22px;
+        text-align: center;
+        background-color: inherit;
+        color: #030303;
+        border: none;
+    }
 
 }
 
@@ -194,7 +239,7 @@
 
 .price {
     flex: 50%;
-    padding: 25px 30px 26px 30px;
+    padding: 5px 30px 26px 30px;
     .price__output {
         display: flex;
         margin-bottom: 22px;
@@ -276,7 +321,6 @@
             color: #030303;
             .price__cols1,
             .price__cols2 {
-                padding-top: 10px;
                 display: flex;
                 justify-content: space-between;
                 .price_icons {
@@ -313,7 +357,7 @@
 
 
     .price__cards {
-        margin-top: 10px;
+        height: 300px;
         position: relative;
         font-family: 'Roboto';
         font-style: normal;
@@ -390,6 +434,20 @@
                     height: 35px;
                 }
             }
+        }
+        .price__cards_btn {
+            margin-top: 38px;
+            float: right;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            display: block;
+            width: 220px;
+            height: 45px;
+            background-color: #710707;
+            color: #ffffff;
         }
         
     }
