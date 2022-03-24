@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --hot --open --mode development",
+    "build-dev": "webpack --mode development --watch",
+    "build-prod": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "path": "^0.12.7",
-    "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
   }
 }
