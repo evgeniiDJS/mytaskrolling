@@ -77,6 +77,10 @@
         & img {
             width: 440px;
             height: 285px;
+            @media screen and (max-width: 767px) {
+                width: 381px;
+                height: 327px;
+            }
         }
         .cards-item__title {
             position: relative;
@@ -121,9 +125,15 @@
 
 .explore-container {
     display: flex;
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
     .info {
         width: 50%;
         margin-top: -3px;
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
         .title_display {
             display: inline;
         }
@@ -151,12 +161,24 @@
 
 .video-container {
     padding-top: 12px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
     .video-player {
         position: relative;
         .video-player__items {
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .video-player__items_block {
+                @media screen and (max-width: 991px) {
+                    width: 248px;
+                    height: 200px;
+                }
+            }
             iframe {
                padding: 5px;
             }
@@ -189,6 +211,9 @@
         display: flex;
         margin-top: 40px;
         padding: 0 0 30px 0 ;
+        @media screen and (max-width: 1199px) {
+            display: block;
+        }
         .title-gold {
             color: #9d8665;
         }
@@ -209,15 +234,33 @@
     .gallery-img {
         column-count: 3;
         gap: 45px 45px;
+        @media screen and (max-width: 767px) {
+            column-count: 1;
+        }
     }
-    .gallery-img img {
+    .gallery_items {
         width: 426px;
         break-inside: avoid;
         padding: 5px;
+        @media screen and (max-width: 1199px) {
+           width: 300px;
+        }
+        @media screen and (max-width: 991px) {
+            width: 230px;
+        }
+        @media screen and (max-width: 767px) {
+            width: 400px;
+        }
     }
     .picture-container {
         overflow-y: hidden;
         height: 200px;
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
     }
     .picture-inner-container {
         gap: 45px 45px;
@@ -241,7 +284,7 @@
 }
 
 
-.content {
+.content__tickets {
     display: flex;
     margin-top: 105px;
     .tickets-order {
@@ -354,6 +397,9 @@
 }
 
 .parallax {
+    @media screen and (max-width: 1199px) {
+        height: 250px;
+    }
     background-image: url("../../assets/img/parallax.jpg");
     width: 100%;
     height: 400px;
@@ -366,6 +412,9 @@
     display: flex;
     width: 100%;
     margin-top: 114px;
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
     .info {
         flex: 1 0 23.33%;
         .info__title {
@@ -381,6 +430,9 @@
     .map {
         flex: 2 0 66.66%;
         margin-top: -10px;
+        @media screen and (max-width: 991px) {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -411,6 +463,9 @@
                     }
                     .menu__link_padding {
                         padding: 0;
+                        @media screen and (max-width: 767px) {
+                            padding: 50px;
+                        }
                     }
                     .menu__link_last {
                         padding-right: 0;
@@ -419,6 +474,12 @@
             }
         }
         .socials {
+            @media screen and (max-width: 1199px) {
+                flex: 1 0 49%;
+            }
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
             display: flex;
             justify-content: flex-end;
             flex: 1 0 50%;

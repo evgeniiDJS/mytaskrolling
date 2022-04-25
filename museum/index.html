@@ -176,12 +176,12 @@
               
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              title="Welcome Louvre">
+              title="Welcome Louvre"> 
             </iframe>
             <div class="video-player__items">
-              <iframe width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="video-player__items_block" width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="video-player__items_block" width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="video-player__items_block" width="452" height="254" style="border: 0;" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!-- <img src="./src/assets/video/poster0.jpg" alt="video" class="video-player__img">
             <button class="btn video-player__middle_play"></button> -->
@@ -203,15 +203,15 @@
         <div class="container gallery-container">
           <h2 class="title title-white title_display">Art Gallery</h2>
           <div class="gallery-img">
-            <img src="./src/assets/img/galery/up/1.jpg" alt="icons">
-            <img src="./src/assets/img/galery/medium/4.jpg" alt="icons">
-            <img src="./src/assets/img/galery/down/7.jpg" alt="icons">
-            <img src="./src/assets/img/galery/up/2.jpg" alt="icons">
-            <img src="./src/assets/img/galery/medium/5.jpg" alt="icons">
-            <img src="./src/assets/img/galery/down/8.jpg" alt="icons">
-            <img src="./src/assets/img/galery/up/3.jpg" alt="icons">
-            <img src="./src/assets/img/galery/medium/6.jpg" alt="icons">
-            <img src="./src/assets/img/galery/down/9.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/up/1.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/medium/4.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/down/7.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/up/2.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/medium/5.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/down/8.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/up/3.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/medium/6.jpg" alt="icons">
+            <img class="gallery_items" src="./src/assets/img/galery/down/9.jpg" alt="icons">
           </div>
           <div class="picture-container">
             <div class="picture-inner-container">
@@ -334,7 +334,7 @@
         </div>
         <div class="container">
           <h2 class="title title-underline title-gold">Buy tickets</h2>
-          <div class="content">
+          <div class="content__tickets">
             <div class="picture">
               <img src="./src/assets/img/Ticket.jpg" alt="picture">
             </div>
@@ -403,7 +403,7 @@
               <a class="info__text info__text_mail" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
             </div>
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.863550765871!2d2.334562465325179!3d48.86081227928773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z0JvRg9Cy0YA!5e0!3m2!1sru!2sru!4v1645534119417!5m2!1sru!2sru" width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.863550765871!2d2.334562465325179!3d48.86081227928773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z0JvRg9Cy0YA!5e0!3m2!1sru!2sru!4v1645534119417!5m2!1sru!2sru" width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -417,7 +417,7 @@
               <span class="logo__title">Louvre</span>
             </a>
           </div>
-          <nav class="navigation footer-navigation">
+          <nav class="footer-navigation">
             <ul class="footer__menu">
               <li>
                 <a class="menu__link menu__link_padding" href="#visiting">Visiting</a>
@@ -469,4 +469,4 @@
     <script src="./src/js/gallery.js"></script>
     <script src="./dist/main.js"></script>
 </body>
-</html>
+</html> 
