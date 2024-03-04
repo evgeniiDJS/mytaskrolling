@@ -47,21 +47,7 @@
 }
 
 
-/* 767px */
-@media screen and (max-width: 767px) {
-   
-    .welcome-slider,
-    .picture,
-    .parallax {
-        display: none;
-    }
-    .map__frame {
-        width: 400px;
-    }
-    .footer__menu {
-        display: block;
-    }
-}
+
 
 /* Burger menu */
 #menu__toggle, 
@@ -71,8 +57,6 @@
 
 @media screen and (max-width: 991px) {
    
-    
-    
     .menu__btn {
         display: flex; 
         align-items: center;
@@ -182,5 +166,54 @@
 }
 
 
+/* 767px */
+@media screen and (max-width: 767px) {
+    .welcome-content__title {
+        display: none;
+    }
 
+    .welcome-content__text {
+        font-size: 18px;
+    }
+
+    .welcome-content__btn {
+        width: 238px;
+    }
+
+    .cards__item img {
+        width: 266px;
+        height: 233px;
+    }
+
+    #contacts {
+        display: none;
+    }
+
+    .gallery_items {
+        width: 270px;
+    }
+    
+    .welcome-slider,
+    .picture,
+    .parallax {
+        display: none;
+    }
+    .map__frame {
+        width: 400px;
+    }
+    .footer__menu {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 575px) {
+    
+}
+
+
+@media( max-width: 640px) {
+    
+}
     
